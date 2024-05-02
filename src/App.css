@@ -1,0 +1,107 @@
+/* Set the background color of the entire app to black */
+@font-face {
+  font-family: 'cyber';
+  src: url(/src/assets/NEO\ CYBERN.otf);
+}
+
+@font-face {
+  font-family: 'clear';
+  src: url(/src/assets/1900805.ttf);
+}
+
+body {
+  background-color: black;
+  margin: 0; 
+  padding: 0; 
+  overflow: hidden; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+}
+
+/* Style for the particles canvas */
+#particles-js {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; 
+  background-color: transparent; 
+}
+
+/* Style for the header containing dynamic text */
+header {
+  position: relative;
+  z-index: 1; 
+  color: white; 
+  text-align: center; 
+  position: relative;
+}
+p {
+  font-family: 'cyber';
+  font-size: 19px;
+  font-weight: bold;
+  color: #00BFFF; /* Bright blue color */
+  padding: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  max-width: 400px; /* Maximum width of the paragraph */
+  margin: 0 auto; /* Center-align the paragraph horizontally */
+  opacity: 0; /* Start with the paragraph invisible */
+
+  /* Animation to continuously glow and go dark */
+  animation: glowAndDark 4s infinite;
+}
+
+/* Keyframes for the glowing and dark animation */
+@keyframes glowAndDark {
+  0%, 100% {
+    opacity: 0; /* Start and end with the paragraph invisible */
+  }
+  50% {
+    opacity: 1; /* Make the paragraph fully visible (glow) */
+  }
+}
+
+h2{
+  font-family: 'clear';
+  font-size: 80px; 
+  margin: 0; 
+  padding: 0; 
+  color: #00BFFF; /* Bright blue color */
+  text-transform: uppercase; 
+  letter-spacing: 5px; 
+  text-shadow: 0 0 10px #00BFFF; /* Add a blue shadow to the text */
+}
+
+
+/* Style for the dynamic text */
+/* .DynamicText {
+  font-size: 3rem; 
+}
+
+p{
+  font-size: 20px; 
+  color: white;
+}
+
+ */ 
+
+ @media screen and (max-width: 600px){
+  header{
+    font-size: 20px;
+  }
+
+  h2{
+    font-size: 40px;
+  }
+
+  p{
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+ }

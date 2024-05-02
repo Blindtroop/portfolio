@@ -1,0 +1,25 @@
+.DynamicTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .DynamicText {
+    font-size: 2rem;
+    margin-bottom: 10px; /* Add margin between dynamic and static text */
+  }
+  
+  .StaticText {
+    font-size: 1rem;
+    color: gray; /* Customize color of static text */
+  }
+  
+  @media screen and (max-width: 600px){
+    
+  .DynamicText{
+    padding-top: 30px;
+    font-size: 20px;
+  }
+  }
